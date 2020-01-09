@@ -6,7 +6,7 @@ services:
     stdin_open: true
     tty: true
     build: ./Dockerfile
-    image: docker-flask-test:latest
+    image: hello_flask:v1.0
     volumes:
       - ./app:/deploy/app
       - ./flask.conf:/etc/nginx/sites-available/flask.conf
